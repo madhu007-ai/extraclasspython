@@ -216,19 +216,386 @@
 #     print("Invalid Data")
 
 
-username = "admin"
-password = "secure123"
-code = "456"
-a = input("Enter your username")
-b= input("Enter your password")
-c = (input("Enter your code"))
-if a == username and b==password and c==code:
-    print("Login Sucesssfully!")
-elif  username!=a:
-    print("Invalid Username")
-elif  password!=b:
-    print("Invalid Password")
-elif  code!=c:
-    print("Invalid Code")
-else:
-    print("Invalid! please try again")
+# username = "admin"
+# password = "secure123"
+# code = "456"
+# a = input("Enter your username")
+# b= input("Enter your password")
+# c = (input("Enter your code"))
+# if a == username and b==password and c==code:
+#     print("Login Sucesssfully!")
+# elif  username!=a:
+#     print("Invalid Username")
+# elif  password!=b:
+#     print("Invalid Password")
+# elif  code!=c:
+#     print("Invalid Code")
+# else:
+#     print("Invalid! please try again")
+
+
+# x= 1
+# while x <=5:
+#     print(x)
+#     x+=1
+
+
+
+# a = input("Enter your name")
+# age = int(input("Enter your age"))
+
+# for i in range (age):
+#     print(a)
+
+# for i in range(10):
+#     if i==5:
+#         break
+#     print(i)
+
+# for i in range (10):
+# if i ==5:
+# continue:
+# print(i)
+
+
+# for i in range (1,6):
+#     print("*" *i)
+
+
+# for i in range (1, 6):
+#     for j in range(1, i+1):
+#         print(j, end ="")
+#     print ()
+
+
+
+# for i in range(6, 0, -1):
+
+#     print('*' * (i - 1))
+
+# for i in range (1,0,2):
+#     print("*" *(i+1))
+
+# def greet(name):
+#     print("Hello", name)
+#     print("Welcome")
+
+# greet("Madhu")
+# greet("Sophiya")
+# greet("Rupa")
+
+# def introduce(name="Madhu",city="Kathmandu"):
+#     print(f"I am {name} and I live in {city}")
+
+# introduce()
+# import random
+# def fortune():
+#     fortune =["go school", "eat momo", "get surprise"]
+# random.choice(fortune)
+# returned_fortune = random.choice(fortune)
+# print(f"You will {random.choice(fortune)} ")
+
+
+#Function for 
+
+# def add_numbers(*numbers):
+#     total = sum(numbers)
+#     return total
+
+# print(add_numbers(1,2))
+# print(add_numbers(1,2,3,4))
+
+# def student_info(**kwargs):
+#     print(kwargs)
+
+# student_info(name="Madhu", age =19, city="Kathmandu" )
+
+# def student_info(**kwargs):
+#     print("Name:", kwargs["name"])
+#     print("Age:", kwargs ["age"])
+
+# student_info(name="Madhu", age = 19)    
+
+# square = lambda x: x*x
+
+# print(square(5))
+# print(square(10))
+
+
+# cube = lambda x: x*x*x
+
+# print(cube(5))
+# print(cube(10))
+
+
+# Recursion
+
+# this will cause an recusrdion error
+# def greet():
+#     print("Greet")
+#     greet()
+
+# greet()
+
+# def factorial(n):
+#     if n==1:
+#         return 1
+#     return n * factorial (n-1)
+# print(factorial(5))
+
+# def fibonacci(n):
+#     if n<=1:
+#         return n
+    
+#     return fibonacci(n-1) + fibonacci(n-2)
+
+# print(fibonacci(5))
+
+
+# def greet():
+#     message ="Hello"
+#     print(message)
+
+# greet()
+
+# name= "Madhu"
+# def show():
+#     print(name)
+# show()
+
+
+# x= 10
+# def change():
+#     x =20
+#     print("Inside Function", x)
+
+# change()
+# print("Outside Function", x)
+
+
+# data structure
+# list
+
+# data =["Ram", 20, True, 3.14]
+# print(data[0])
+
+# fruits = ["Apple", "Banana", "Mango"]
+# print(fruits[0])
+# print(fruits[1])
+# print(fruits[-2])
+
+# list slicing
+
+# numbers = [10,20,30,40,50]
+# numbers[1:4]
+# numbers [:3]
+# numbers[2:]
+# numbers [:]
+# print(numbers)
+
+
+# Modifying List
+
+# fruits =["Apple", "Banana","Mango"]
+# fruits[1]= "Orange"
+# print(fruits)
+
+# list methods
+# append()= Add items at end
+# student = ["Ram", "Shyam"]
+# student.append("Hari")
+# print(student)
+
+# insert()=insert at specific position
+# students=["Ram", "Hari"]
+# students.insert(1, "shyam")
+
+# remove()=removes by value
+# student.remove("Shyam")
+
+# pop() = Removes item by index
+# student.pop()
+
+
+# sort() = sort data
+# numbers = [1,5,4,3]
+# numbers.sort()
+# print (numbers)
+
+# fruits = ["Mango", "Apple", "Banana"]
+# fruits.sort()
+# print(fruits)
+
+# Tuple
+# t = (10,20,30)
+# name , age , city = "Madhu", 19 , "Kathmandu"
+# print(t[0])
+# print (name)
+
+# country = ("Nepal", "India", "China")
+# print (country[1])
+
+# Concatenation and repetition
+# a = (1,2)
+# b = (3,4)
+# print(a + b)
+# print(a * 2)
+
+# Methods and Membership
+# t = (1,2,2,3)
+# print(2 in t)
+# print(t.count(2))
+# print(t.index(3))
+
+# t = (1,2,3,3,4,)
+# print(t[1:4])
+# print(t.count(3))
+
+# Set
+# s = {1,2,3,3,4}
+# print(s)
+
+# s.add(5)
+# s.update([6,7])
+# s.remove(2)
+# s.discard(99)
+# print(s)
+
+# s= {5,5,7,8,7,9}
+# s.add(6)
+# s.remove(5)
+# print(s)
+
+
+# A = {1,2,3,4}
+# B = {3,4,5,6}
+# print(A|B)
+# print(A & B)
+# print(A-B)
+# print(A^B)
+
+# A ={"Mango", "Apple", "Watermelon"}
+# B = {"Watermelon", "Litchi"}
+# print(A&B)
+
+# dictionary
+
+# student = {
+#     "name": "Madhu",
+#     "age" : 19,
+#     "grade" : 12
+# }
+# print(student["name"])
+# student["age"]
+# student["city"] = "Kathmandu"
+
+# keys()/values()/items()
+# d = {
+#     "a":1,
+#     "b":2
+# }
+# print(d.keys())
+# print(d.values())
+# print(d.items())
+
+# get() - Safe Access
+# print(d.get("a"))
+# print(d.get("z", 0))
+
+# update()/pop()/clear()
+# d.update({"c": 3})
+# d.pop("b")
+# d.popitem()
+# d.clear()
+
+
+
+# loop through keys
+# for key in student:
+#     print(key)
+
+# for val in student.values():
+#     print(val)
+
+# for k, v in student.items():
+#     print(k,v)
+
+# opening files with open()
+# file = open("student.txt")
+
+# Three Ways Read a File
+# read()-Everything at once
+# print(file.read())
+
+
+# Using write()
+# file = open("notes.txt","w")
+# file.write("Hello Students")
+# file.write("\nPython is fun!")
+# file.close()
+
+
+# print("Enter student details:")
+# student_data = {
+#     "Name": input("Enter name: "),
+#     "Age": input("Enter age: "),
+#     "Major": input("Enter major: ")
+# }
+
+# with open("student_records.txt", "w") as file:
+
+#     file.write("--- Student Record ---\n")
+    
+#     for key, value in student_data.items():
+
+#         line = f"{key}: {value}\n"
+#         file.write(line)
+        
+#     print("\nData successfully saved to 'student_records.txt'!")
+
+# import csv
+# with open ("student.csv", "r") as file:
+#     reader = csv.reader(file)
+#     for row in reader:
+#         print(row)
+
+
+# import csv 
+# with open ("student.csv", "a", newline="")as file:
+#     writer =csv.writer(file)
+#     writer .writerow(["Name", "Age","Grade"])
+#     writer.writerow(["Madhu", 19 , "B"])
+
+
+# import csv 
+# student = {
+#     "name":"Madhu",
+#     "age": 19,
+#     "grade": "A"
+# }
+# with open("student.csv", "w", newline="")as file:
+#     writer =csv.DictWriter(
+#         file,
+#         fieldnames=["name", "age", "grade"]
+#     )
+#     writer.writeheader()
+#     writer.writerow(student)
+
+# import csv
+
+# print("Enter student details:")
+
+
+# student_data = {
+#     "name": input("Enter name: "),
+#     "age": input("Enter age: "),
+#     "major": input("Enter major: ")
+# }
+
+# with open("student_records.csv", "w", newline="") as file:
+#     writer = csv.DictWriter(file, fieldnames=["name", "age", "major"])
+    
+#     writer.writeheader()
+#     writer.writerow(student_data)
+
+# print("\nData successfully saved to student_records.csv!")

@@ -1,0 +1,4 @@
+--- Student Record ---
+Name: MAdhu
+Age: 19
+Major: bit
